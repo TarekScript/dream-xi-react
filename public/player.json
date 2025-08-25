@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co.com/F4TvM75j/virat.jpg",
+        "name": "Virat Kohli",
+        "country": "India",
+        "position": "Batsman",
+        "bowling_style": "Right-arm medium",
+        "batting_style": "Right-hand bat",
+        "price": 180000
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co.com/Z6KvPBQy/stokes.jpg",
+        "name": "Ben Stokes",
+        "country": "England",
+        "position": "All-rounder",
+        "bowling_style": "Right-arm fast-medium",
+        "batting_style": "Left-hand bat",
+        "price": 195000
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co.com/pBgySL2t/Jasprit-Bumrah.jpg",
+        "name": "Jasprit Bumrah",
+        "country": "India",
+        "position": "Bowler",
+        "bowling_style": "Right-arm fast",
+        "batting_style": "Right-hand bat",
+        "price": 160000
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co.com/7dBsFhq2/kane-williamson.jpg",
+        "name": "Kane Williamson",
+        "country": "New Zealand",
+        "position": "Batsman",
+        "bowling_style": "Right-arm offbreak",
+        "batting_style": "Right-hand bat",
+        "price": 175000
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co.com/pBHQJ9K8/Rashid-Khan.jpg",
+        "name": "Rashid Khan",
+        "country": "Afghanistan",
+        "position": "Bowler",
+        "bowling_style": "Right-arm legbreak googly",
+        "batting_style": "Right-hand bat",
+        "price": 185000
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co.com/9mDxc7KN/dalal-shakib.jpg",
+        "name": "Dalal Al Hasan",
+        "country": "India",
+        "position": "Awami-Dalal",
+        "bowling_style": "Pro Juadi",
+        "batting_style": "Khunir Dalal",
+        "price": 170000
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co.com/qYbVcJRL/david-warner.jpg",
+        "name": "David Warner",
+        "country": "Australia",
+        "position": "Batsman",
+        "bowling_style": "Right-arm legbreak",
+        "batting_style": "Left-hand bat",
+        "price": 155000
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co.com/b50B11Lh/Kagiso-Rabada.jpg",
+        "name": "Kagiso Rabada",
+        "country": "South Africa",
+        "position": "Bowler",
+        "bowling_style": "Right-arm fast",
+        "batting_style": "Left-hand bat",
+        "price": 165000
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co.com/0y4DkY4D/babar-azam.jpg",
+        "name": "Babar Azam",
+        "country": "Pakistan",
+        "position": "Batsman",
+        "bowling_style": "Right-arm offbreak",
+        "batting_style": "Right-hand bat",
+        "price": 190000
+    }
+]
