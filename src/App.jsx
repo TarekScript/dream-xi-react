@@ -1,12 +1,15 @@
 
 import './App.css'
+import Header from './Components/Header/Header'
+import Players from './Components/Players/Players'
 
 function App() {
 
   return (
     <>
-      <div className='sora-font'>
-        <h1 className='text-5xl '>Vite + React</h1>
+      <div className='sora-font mx-16 mt-4'>
+        <Header></Header>
+        <Players></Players>
       </div>
     </>
   )
