@@ -1,7 +1,7 @@
 import { CiBitcoin } from "react-icons/ci";
 const Header = () => {
     return (
-        <div>
+        <div className='mx-16 mt-4'>
             <div className='flex items-center justify-between'>
                 <div>
                     <img src='https://i.ibb.co.com/99pHjHWC/logo.png' alt="" />
