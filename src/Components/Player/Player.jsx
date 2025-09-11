@@ -1,8 +1,8 @@
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { IoFlagOutline } from "react-icons/io5";
 
-const Player = ({ player }) => {
-    const { img, name, country, position, bowling_style, batting_style, price } = player;
+const Player = ({ player, handleSelectedPlayer }) => {
+    const { img, name, country, position, bowling_style, batting_style, price, id } = player;
     return (
         <div className='space-y-3 rounded-lg p-4 border border-gray-300'>
             <img className='w-full h-[250px] rounded-lg' src={img} alt="" />
@@ -28,7 +28,7 @@ const Player = ({ player }) => {
             </div>
             <div className='flex justify-between'>
                 <h3>Price: {price}$</h3>
-                <button className="btn border border-gray-300 p-2 rounded-lg">Choose Player</button>
+                <button onClick={() => handleSelectedPlayer(id)} className="btn border border-gray-300 p-2 rounded-lg">Choose Player</button>
             </div>
         </div>
     );
