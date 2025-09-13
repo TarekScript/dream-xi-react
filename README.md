@@ -25,5 +25,5 @@ A simple **Single Page Application (SPA)** built with **React**, styled using **
 
 Clone the repository:  
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/TarekScript/dream-xi-react.git
 cd your-repo-name
