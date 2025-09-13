@@ -1,12 +1,29 @@
-# React + Vite
+# 🌐 Simple React SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **Single Page Application (SPA)** built with **React**, styled using **Tailwind CSS**, and enhanced with **React Toastify** for smooth toast notifications.  
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [View Project](https://dream-xi-react.netlify.app/)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
+- ⚡ Single Page Application structure  
+- 🎨 Modern and responsive UI with **Tailwind CSS**  
+- 🔔 Toast notifications using **React Toastify**  
+- 📱 Fully responsive design for all devices  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+- [React](https://reactjs.org/) – Frontend library  
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework  
+- [React Toastify](https://fkhadra.github.io/react-toastify/introduction) – Notifications  
+
+---
+
+## 📦 Installation & Setup
+
+Clone the repository:  
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name

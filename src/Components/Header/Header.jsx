@@ -1,4 +1,5 @@
 import { CiBitcoin } from "react-icons/ci";
+
 const Header = ({ handleClaimCoins, coins }) => {
     return (
         <div className='mx-16 mt-4'>

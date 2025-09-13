@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Player from "../Player/Player";
 import Players from "../Players/Players";
 import Selected from "../Selected/Selected";
+import { ToastContainer, toast } from 'react-toastify';
 
 const MainCompo = () => {
     const [players, setPlayers] = useState([]);
@@ -29,16 +30,16 @@ const MainCompo = () => {
 
         // validation
         if (coins <= 0) {
-            alert("Please Claim coins first")
+            toast("Please Claim coins first")
             return;
         }
         if (selectedPlayer.length >= 6) {
-            alert('You Already added 6 players')
+            toast('You Already added 6 players')
             return;
         }
         for (let player of selectedPlayer) {
             if (player.id == id) {
-                alert('Player Already Added');
+                toast('Player Already Added');
                 return;
             }
         }
@@ -76,6 +77,7 @@ const MainCompo = () => {
                     handleRemovePlayer={handleRemovePlayer}
                 ></Selected>
             }
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
