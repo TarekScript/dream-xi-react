@@ -28,7 +28,7 @@ const Player = ({ player, handleSelectedPlayer }) => {
             </div>
             <div className='flex justify-between'>
                 <h3>Price: {price}$</h3>
-                <button onClick={() => handleSelectedPlayer(id)} className="btn border border-gray-300 p-2 rounded-lg">Choose Player</button>
+                <button onClick={() => handleSelectedPlayer(id, price)} className="btn border border-gray-300 p-2 rounded-lg">Choose Player</button>
             </div>
         </div>
     );

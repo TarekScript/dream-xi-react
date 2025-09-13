@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
+import Header from "../Header/Header";
 import Player from "../Player/Player";
 import Players from "../Players/Players";
 import Selected from "../Selected/Selected";
 
 const MainCompo = () => {
     const [players, setPlayers] = useState([]);
-    const [selectedPlayer, setSelectedPlayer] = useState([])
+    const [selectedPlayer, setSelectedPlayer] = useState([]);
+    const [coins, setCoins] = useState(0);
     useEffect(() => {
         fetch('player.json')
             .then(res => res.json())
@@ -14,14 +16,22 @@ const MainCompo = () => {
     // toggole 
     const [toggole, setToggole] = useState(true);
 
+    // claim coins 
+    const handleClaimCoins = () => {
+        setCoins(coins + 1200000)
+    }
     const handleToggole = (booleanData) => {
         setToggole(booleanData)
 
     }
     // add player to selected player 
-    const handleSelectedPlayer = (id) => {
+    const handleSelectedPlayer = (id, price) => {
 
         // validation
+        if (coins <= 0) {
+            alert("Please Claim coins first")
+            return;
+        }
         if (selectedPlayer.length >= 6) {
             alert('You Already added 6 players')
             return;
@@ -38,6 +48,7 @@ const MainCompo = () => {
             if (player.id == id) {
                 const newselectedPlayer = [...selectedPlayer, player]
                 setSelectedPlayer(newselectedPlayer);
+                setCoins(coins - price)
             }
         })
     }
@@ -48,18 +59,23 @@ const MainCompo = () => {
         setSelectedPlayer(newselectedPlayer)
     }
     return (
-        <div> {toggole ?
-            <Players
-                handleToggole={handleToggole}
-                handleSelectedPlayer={handleSelectedPlayer} selectedPlayer={selectedPlayer}
-                players={players}
-            ></Players> :
-            <Selected
-                handleToggole={handleToggole}
-                selectedPlayer={selectedPlayer}
-                handleRemovePlayer={handleRemovePlayer}
-            ></Selected>
-        }
+        <div>
+            <Header
+                coins={coins}
+                handleClaimCoins={handleClaimCoins}
+            ></Header>
+            {toggole ?
+                <Players
+                    handleToggole={handleToggole}
+                    handleSelectedPlayer={handleSelectedPlayer} selectedPlayer={selectedPlayer}
+                    players={players}
+                ></Players> :
+                <Selected
+                    handleToggole={handleToggole}
+                    selectedPlayer={selectedPlayer}
+                    handleRemovePlayer={handleRemovePlayer}
+                ></Selected>
+            }
         </div>
     );
 };

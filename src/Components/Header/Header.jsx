@@ -1,5 +1,5 @@
 import { CiBitcoin } from "react-icons/ci";
-const Header = () => {
+const Header = ({ handleClaimCoins, coins }) => {
     return (
         <div className='mx-16 mt-4'>
             <div className='flex items-center justify-between'>
@@ -16,7 +16,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <div>
-                        <button className='border border-[#1313131A] p-2 rounded-lg flex items-center gap-1'><span>0</span> Coins <span className='text-yellow-500 font-bold text-3xl'><CiBitcoin /></span>
+                        <button className='border border-[#1313131A] p-2 rounded-lg flex items-center gap-1'><span>{coins}</span> Coins <span className='text-yellow-500 font-bold text-3xl'><CiBitcoin /></span>
                         </button>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const Header = () => {
                 <img className='mx-auto' src="https://i.ibb.co.com/4nRkgMPp/banner-main.png" alt="" />
                 <h1 className='text-5xl text-center font-bold text-white'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
                 <h3 className='text-gray-400 font-medium text-center text-xl'>Beyond Boundaries Beyond Limits</h3>
-                <button className='bg-[#E7FE29] p-2 rounded-lg border border-[#E7FE29] m-2 flex font-medium mx-auto'>Claim Free Credit</button>
+                <button onClick={handleClaimCoins} className='bg-[#E7FE29] p-2 rounded-lg border border-[#E7FE29] m-2 flex font-medium mx-auto'>Claim Free Credit</button>
             </div>
         </div >
     );

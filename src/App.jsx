@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className='sora-font'>
-        <Header></Header>
+        {/* <Header></Header> */}
         <MainCompo></MainCompo>
         <Newsletter></Newsletter>
         <Footer></Footer>
